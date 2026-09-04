@@ -13,6 +13,7 @@ import "./index.css";
 import Clients from "./pages/Clients";
 import Followups from "./pages/Followups";
 import AIScript from "./pages/AIScript";
+import CallLogs from "./pages/CallLogs";
 
 function Dashboard() {
   return (
@@ -225,9 +226,12 @@ function Layout() {
             element={<Placeholder title="Calls" />}
           />
           <Route
-            path="/call-logs"
-            element={<Placeholder title="Call Logs" />}
-          />
+        path="/call-logs"
+       element={<CallLogs />}
+      />
+            
+            
+          
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
