@@ -12,6 +12,7 @@ import {
 import "./index.css";
 import Clients from "./pages/Clients";
 import Followups from "./pages/Followups";
+import AIScript from "./pages/AIScript";
 
 function Dashboard() {
   return (
@@ -210,12 +211,15 @@ function Layout() {
          element={<Followups />}
          />
             
+          <Route
+         path="/ai-script"
+         element={<AIScript />}
+        />  
+          
+          
+            
             
           
-          <Route
-            path="/ai-script"
-            element={<Placeholder title="AI Script" />}
-          />
           <Route
             path="/calls"
             element={<Placeholder title="Calls" />}
