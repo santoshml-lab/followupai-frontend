@@ -598,3 +598,48 @@ a {
   gap: 10px;
   margin-top: 22px;
 }
+
+/* ================================
+   AI SCRIPT
+================================ */
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ai-script-layout {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 20px;
+}
+
+.generate-button {
+  margin-top: 8px;
+  width: 100%;
+  justify-content: center;
+}
+
+.generate-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.script-box {
+  white-space: pre-wrap;
+  line-height: 1.7;
+  color: #374151;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 18px;
+  font-size: 14px;
+  min-height: 300px;
+}
+
+@media (max-width: 900px) {
+  .ai-script-layout {
+    grid-template-columns: 1fr;
+  }
+}
