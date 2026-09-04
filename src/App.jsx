@@ -11,6 +11,7 @@ import {
 
 import "./index.css";
 import Clients from "./pages/Clients";
+import Followups from "./pages/Followups";
 
 function Dashboard() {
   return (
@@ -205,9 +206,12 @@ function Layout() {
             
           
           <Route
-            path="/followups"
-            element={<Placeholder title="Follow-ups" />}
-          />
+        c path="/followups"
+         element={<Followups />}
+         />
+            
+            
+          
           <Route
             path="/ai-script"
             element={<Placeholder title="AI Script" />}
