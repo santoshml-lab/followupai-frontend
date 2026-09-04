@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 
 import "./index.css";
+import Clients from "./pages/Clients";
 
 function Dashboard() {
   return (
@@ -197,9 +198,12 @@ function Layout() {
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route
-            path="/clients"
-            element={<Placeholder title="Clients" />}
-          />
+          path="/clients"
+          element={<Clients />}
+         />
+            
+            
+          
           <Route
             path="/followups"
             element={<Placeholder title="Follow-ups" />}
